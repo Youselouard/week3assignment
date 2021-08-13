@@ -1,0 +1,20 @@
+---
+title: "My cars plot"
+author: "Youssef"
+date: "8/13/2021"
+output: slidy_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## My car plot
+
+```{r cars, echo = FALSE, message=FALSE}
+library("plotly")
+plot_ly(mtcars, x = ~hp, y = ~mpg, mode = "markers", color = ~disp)
+```
+
+## Thank you !
+
